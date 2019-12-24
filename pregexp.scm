@@ -42,7 +42,7 @@
     (for-each (lambda (x) (display #\space) (write x))
               whatever)
     (newline)
-    (error "pregexp-error")))
+    (error 'pregexp-error "pregexp-error" fn*)))
 
 (define pregexp-read-pattern
   (lambda (s i n)
